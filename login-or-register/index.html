@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="application-name" content="بلاتفورم">
+  <meta name="author" content="محمد نبيل">
+  <meta name="description" content="أول منصة مشاركة فيديوهات عربية ، تم إنشائها خصيصًا لتطوير مهارات الشباب العربي .">
+  <meta name="keywords" content="Video Sharing Platform , VS Platform , Arabic Video Sharing Platform , منصة مشاركة فيديوهات عربية , VAMLT , VAMLT Videos">
+  <title>تسجيل الدخول - إنشاء حساب - VAMLT</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="../images/vamlt-favicon.png" />
+</head>
+
+<body>
+   <!-------
+    Header
+   -------->
+  <header>
+    <div class="right-section">
+      <a href="../index.html"><img src="../images/vamlt.png" alt="بلاتفورم"></a>
+    </div>
+    <div class="middle-section">
+      <form action="">
+        <input type="text" placeholder="بحث">
+        <a class="search-icon" href="../search/index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </form>
+      <a href="../video-upload/index.html" class="upload-icon" title="رفع فيديو">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+      </a>
+      <img src="../images/moon.png" alt="الوضع الداكن" id="dark-mode-toggle" title="الوضع الداكن">
+    </div>
+    <div class="left-section">
+      <img src="../images/avatar.png" class="menu-img" alt="صورة الحساب" 
+      title="معلومات الحساب" onclick="toggleMenu()"/>
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <div class="profile-container">
+              <div class="profile-img">
+                <img src="../images/avatar.png" alt="صورة الحساب">
+              </div>
+              <div class="name-profile">
+                <span class="name">اسم المستخدم</span>
+                <a href="../user/index.html" class="profile">الحساب الشخصى</a>
+              </div>
+            </div>
+          <hr />
+          <ul>
+            <li class="sub-menu-link active-link">
+              <a href="../index.html">
+                <i class="fa-solid fa-circle-play"></i>
+            <span>تصفح الفيديوهات</span>
+              </a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="../accounts/index.html">
+                <i class="fa-solid fa-user-group"></i>
+                <span>الحسابات التى أتابعها</span>
+              </a>
+            </li>
+            <li class="sub-menu-link active-link">
+              <a href="index.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>
+                  تسجيل الدخول
+                </span>
+              </a>
+            </li>
+            <hr>
+            <div class="copyrights">
+              <p>جميع الحقوق محفوظة <br> بلاتفورم © 2022</p>
+              <p class="founder">مؤسس المنصة : <a target="_blank" href="https://mohamednabil-0.web.app/">محمد
+                نبيل</a></p>
+              <hr>
+            </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+   <!-------
+    Content Area
+   -------->
+  <div class="content-area login-or-register-area">
+    <div class="login-or-register-container">
+      <div class="title-text">
+        <div class="title login">تسجيل الدخول</div>
+        <div class="title signup">إنشاء حساب</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">تسجيل الدخول</label>
+          <label for="signup" class="slide signup">إنشاء حساب</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="بريدك الإلكتروني" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="كلمة السر" required>
+            </div>
+            <div class="pass-link"><a href="#">نسيت كلمة السر ؟</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="تسجيل الدخول">
+            </div>
+            <div class="signup-link">ليس لديك حساب ؟ <a href="">قم بإنشاء حساب الآن !</a></div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="اسمك" required>
+            </div>
+            <div class="field">
+              <input type="email" placeholder="بريدك الإلكتروني" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="كلمة السر" required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="إنشاء حساب">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/Login.js"></script>
+</body>
+
+</html>
